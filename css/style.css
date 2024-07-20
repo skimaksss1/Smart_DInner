@@ -90,7 +90,8 @@ section{
 }
 .school_img{
     width: 100%;
-    height: 157px;
+    min-height: 100px;
+    max-height: 157px;
     background-image: url(../img/school.png);
     background-size: cover;
     background-position: center center;
