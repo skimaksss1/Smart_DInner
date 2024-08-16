@@ -12,7 +12,7 @@ a {
 }
 
 body {
-  background-color: #192229;
+  background-color: #192229 !important;
 }
 
 .container {
@@ -118,7 +118,7 @@ section {
   font-weight: 600;
 }
 
-.progress {
+.progress_circle {
   position: relative;
   width: 120px;
   height: 120px;
@@ -297,6 +297,7 @@ section {
   justify-content: center;
   align-items: center;
   gap: 10px;
+  padding: 0 !important;
 }
 .main nav ul a {
   display: block;
@@ -327,6 +328,7 @@ section {
 }
 .main .general .header_admin {
   width: 100%;
+  height: 40px;
   display: flex;
   justify-content: space-between;
 }
@@ -353,9 +355,15 @@ section {
   font-weight: bold;
   color: #fff;
 }
+.main .general .filters_line {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 .main .general .filters_line .filters {
   display: flex;
-  gap: 30px;
+  justify-content: space-between;
+  width: 100%;
 }
 .main .general .filters_line .filters .search-container {
   display: flex;
@@ -447,6 +455,49 @@ gap .main .general .filters_line .filters .dropdown .dropbtn:hover {
 .main .general .filters_line .filters .dropdown:hover .dropdown-content {
   display: block;
 }
+.main .general .filters_line .filters .form-control {
+  display: block;
+  width: auto;
+  min-width: 320px;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 400;
+  /* line-height: 1.5; */
+  color: #ffffff;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #242D37;
+  background-clip: padding-box;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.main .general .filters_line .filters .form-control::placeholder {
+  color: #fff;
+}
+.main .general .filters_line .filters .filters-row {
+  display: flex;
+  gap: 30px;
+}
+.main .general .filters_line .filters .sorting {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.main .general .filters_line .filters .sorting .green_btn {
+  background-color: #00E676;
+  color: rgb(0, 0, 0);
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .main .general .table {
   height: calc(100vh - 200px);
   overflow: auto;
@@ -501,6 +552,7 @@ gap .main .general .filters_line .filters .dropdown .dropbtn:hover {
   position: sticky;
   top: 0;
   background-color: #192229;
+  border-bottom: none !important;
 }
 .main .general .table table tr {
   background-color: #1F2731;
@@ -540,4 +592,62 @@ gap .main .general .filters_line .filters .dropdown .dropbtn:hover {
   gap: 10px;
   font-size: 16px;
   font-weight: 500;
+}
+.main .general .cards {
+  display: flex;
+  gap: 20px;
+}
+.main .general .cards .card {
+  background-color: #1F2731;
+  border-radius: 5px;
+  padding: 25px;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
+  min-height: 220px;
+  justify-content: center;
+  margin-bottom: 0;
+}
+.main .general .cards .stat {
+  width: 25%;
+}
+.main .general .cards .about {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+}
+.main .general .cards .about .about_info {
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.main .general .cards .about .about_info .school_name {
+  margin-bottom: 5px;
+}
+.main .general .cards .hbday {
+  width: 25%;
+}
+.main .general .cards .green_btn {
+  padding: 5px 20px;
+  background-color: #00E676;
+  color: #000;
+}
+.main .general .diagram {
+  padding: 20px 0;
+}
+.main .general .diagram .card, .main .general .diagram .card-header {
+  background-color: #1F2731 !important;
+}
+.main .general .diagram .apexcharts-title-text {
+  fill: #fff;
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 600;
+  font-size: 20px;
+}
+.main .general .diagram .apexcharts-text {
+  font-family: "Montserrat", sans-serif !important;
 }/*# sourceMappingURL=style.css.map */
